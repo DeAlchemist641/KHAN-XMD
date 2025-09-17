@@ -10,11 +10,11 @@ function convertToBool(text, fault = 'true') {
 
 module.exports = {
     // ===== BOT CORE SETTINGS =====
-    SESSION_ID: process.env.SESSION_ID || "",  // Your bot's session ID (keep it secure)
+    SESSION_ID: process.env.SESSION_ID || "IK~dGUlVQbK#t89XV74Utzp5fqUPhO-cnv1VYoNJ10jsyiCXyaeMr6U",  // Your bot's session ID (keep it secure)
     PREFIX: getConfig("PREFIX") || ".",  // Command prefix (e.g., "., / ! * - +")
     CHATBOT: getConfig("CHATBOT") || "on", // on/off chat bot 
     BOT_NAME: process.env.BOT_NAME || getConfig("BOT_NAME") || "KHAN-MD",  // Bot's display name
-    MODE: getConfig("MODE") || process.env.MODE || "public",        // Bot mode: public/private/group/inbox
+    MODE: getConfig("MODE") || process.env.MODE || "private",        // Bot mode: public/private/group/inbox
     REPO: process.env.REPO || "https://github.com/JawadTechXD/KHAN-MD",  // Bot's GitHub repo
     BAILEYS: process.env.BAILEYS || "@whiskeysockets/baileys",  // Bot's BAILEYS
 
@@ -44,21 +44,21 @@ module.exports = {
     MENU_IMAGE_URL: getConfig("MENU_IMAGE_URL") || "https://files.catbox.moe/7zfdcq.jpg",  // Bot's "alive" menu mention image
 
     // ===== SECURITY & ANTI-FEATURES =====
-    ANTI_DELETE: process.env.ANTI_DELETE || "true", // true antidelete to recover deleted messages 
+    ANTI_DELETE: process.env.ANTI_DELETE || "false", // true antidelete to recover deleted messages 
     ANTI_CALL: process.env.ANTI_CALL || "false", // enble to reject calls automatically 
     ANTI_BAD_WORD: process.env.ANTI_BAD_WORD || "false",    // Block bad words?
-    ANTI_LINK: process.env.ANTI_LINK || "true",    // Block links in groups
-    ANTI_VV: process.env.ANTI_VV || "true",   // Block view-once messages
+    ANTI_LINK: process.env.ANTI_LINK || "false",    // Block links in groups
+    ANTI_VV: process.env.ANTI_VV || "false",   // Block view-once messages
     DELETE_LINKS: process.env.DELETE_LINKS || "false",          // Auto-delete links?
-    ANTI_DEL_PATH: process.env.ANTI_DEL_PATH || "same", // inbox deleted messages (or 'same' to resend)
-    ANTI_BOT: process.env.ANTI_BOT || "true",
-    PM_BLOCKER: process.env.PM_BLOCKER || "true",
+    ANTI_DEL_PATH: process.env.ANTI_DEL_PATH || "inbox", // inbox deleted messages (or 'same' to resend)
+    ANTI_BOT: process.env.ANTI_BOT || "false",
+    PM_BLOCKER: process.env.PM_BLOCKER || "false",
 
     // ===== BOT BEHAVIOR & APPEARANCE =====
     DESCRIPTION: process.env.DESCRIPTION || "*© ᴘᴏᴡᴇʀᴇᴅ ʙʏ Jᴀᴡᴀᴅ TᴇᴄʜX*",  // Bot description
-    PUBLIC_MODE: process.env.PUBLIC_MODE || "true",              // Allow public commands?
+    PUBLIC_MODE: process.env.PUBLIC_MODE || "false",              // Allow public commands?
     ALWAYS_ONLINE: process.env.ALWAYS_ONLINE || "false",        // Show bot as always online?
-    AUTO_STATUS_REACT: process.env.AUTO_STATUS_REACT || "true", // React to status updates?
+    AUTO_STATUS_REACT: process.env.AUTO_STATUS_REACT || "false", // React to status updates?
     AUTO_STATUS_SEEN: process.env.AUTO_STATUS_SEEN || "true", // VIEW to status updates?
     AUTO_BIO: process.env.AUTO_BIO || "false", // ture to get auto bio 
     WELCOME: process.env.WELCOME || "false", // true to get welcome in groups 
